@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+  }
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #FFF;
+	font-family: 'Didact Gothic';
+}
+
+header {
+	width: 100%;
+	padding: 10px 0.5% 0px 0.5%;
+	background: transparent;
+	float: left;
+	position: fixed;
+	top: 0px;
+	background-color: #343434;
+}
+
+header #logo a {
+	position: relative;
+	bottom: 6px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.7em;
+	line-height: 45px;
+	margin-left: 40px;
+	margin-right: 25px;
+	font-family: 'Didact Gothic', serif;
+	text-decoration: unset;
+	width: 10%;
+}
+
+@media (min-width: 701px) {
+	#logo {
+		float: left;
+		font-size: 1.1em;
+	}	
+
+	#about {
+		float: left;	
+	}
+}
+
+	@media (max-width: 701px) {
+	#logo {
+		margin-top: 15px;
+		
+		font-size: 1.5em;
+	}
+
+	#about {
+		float: left;
+		
+	}
+}
+
+#about {
+	text-align: center;
+	font-size: 1em;
+	line-height: 40px;
+}
+
+#about > span a {color: #fff;  text-decoration: unset;}
+
+#about > span {
+	padding: 10px;
+	position: relative;
+	margin: 30px;
+}
+
+#about > span::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: .3rem;
+	background-color: #181FED;
+	left: 0;
+	bottom: 0;
+	transform: scale(0,1);
+	transition: .4s;
+
+}
+
+#about > span:hover::before {
+	transform: scale(1,1);
+
+}
+
+.fixed {
+	z-index: 5000;
+	background-color: #fff;
+	border-bottom: 1px solid silver;
+}
+
+header.fixed #logo a{
+color: #343434
+}
+
+.fixed #about a {color: #343434}
+
+
+/*Блок с описанием*/
+
+.description {
+	height: 100%;
+	margin: 1.2em 0 0.5em 0;
+	padding-right: 300px;
+	padding-left: 300px;
+	text-align: center;
+	font-size: 2.5em;
+	background-color: #181FED;
+	color: #FFF;
+	line-height: 1.25;
+
+}
+
+/* Блок с учёными */
+
+
+
+img {
+	width: 215px;
+	height: 300px;
+	border-radius: 10px;
+	
+}
+
+	tr {
+		transition: 1s;
+	}
+
+	tr:hover {
+		transform: scale(1.05);
+	}
+
+tr:nth-child(odd) {
+	float: right;
+}
+
+table {
+	margin-left: 100px;
+	width: 90%;
+	border-spacing: 50px;
+}
+
+
+td#y {
+	background: #181FED;
+	color: #FFF;
+	width: 100%;
+	box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.33);
+	font-size: 25px;
+	border-style: solid;
+	border-width: 3px 3px 3px 3px;
+	border-color: silver;
+	border-radius: 10px;
+	text-align: center;
+
+}
+
+@media (max-width: 751px) {
+	td#y  {
+		font-size: 12px;
+		width: 300%;
+	}
+}
+
+button {
+	padding: 10px 15px;
+	border: silver 2px solid;
+	color: #FFF;
+	background: transparent;
+	transition: 0.3s;
+	cursor: pointer;
+	margin: 20px;
+}
+
+button:hover {
+	transform: scale(1.2) translateX(8px);
+}
+
+#more1, #more2, #more3, #more4, #more5, #more6, #more7 {display: none;}
+
+
+/*Блок с контактами*/
+
+
+#form_input input:valid + span:before
+		{
+			color: green;
+			content: '\2713';
+			padding-left: 6px;
+		}
+
+#form_input	input:invalid + span:after
+		{
+			color: red;
+			content: "*";
+			padding-left: 5px;
+		}
+	#form_input	input[type="number"]
+		{
+			margin-right: -5px;
+		}
+
+#contacts {
+	width: 100%;
+	float: left;
+	padding-bottom: 40px;
+	padding-top: 70px;
+	border-top: 4px solid #ccc;
+	background: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Didact Gothic', serif;
+	font-weight: lighter;
+}
+
+#contacts h5 {
+	font-size: 3em; color: #4f4f4f 
+}
+
+#form_input {
+	margin-top: 15px;
+	width: 35%;
+	margin-left: 38%;
+	font-size: 1.1em;
+}
+
+#form_input label {
+	color: #505050;
+	cursor: pointer;
+	font-size: 1.4em;
+	font-family: Georgia, serif;
+}
+
+#form_input label > span {
+	color: #e87e7e;
+}
+
+#form_input input,#form_input textarea {
+	margin-bottom: 10px;
+	width: 70%;
+	padding: 10px 2%;
+	border-radius: 7px;
+	border: 2px solid silver;
+	font-size: 0.9em;
+	color: #4a4a4a;
+}
+
+#form_input input:focus, #form_input textarea:focus {
+	border-color: #333;
+}
+
+.btn {
+	float: left;
+	border-radius: 5px;
+	padding: 5px 9px;
+	font-size: 1.2em;
+	background-color: #ec6550;
+	text-shadow: #454545 0 0 2px;
+	cursor: pointer;
+	color: white;
+	font-family: Georgia, serif;
+}
+
+.btn:hover {
+	background-color: #c15443;
+}

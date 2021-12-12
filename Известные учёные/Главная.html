@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="E:\Sublime projects\Универ\Известные учёные css\main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="E:\Sublime projects\Универ\Известные учёные js\main.js"></script>
+	<title></title>
+	
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+			<a href="#">γνῶσις</a>
+		</div>
+		<div id="about">
+			<span><a href="#" title="Науки" onclick="slowScroll('#overview')">Науки</a></span>
+			<span><a href="#" title="Контакты" onclick="slowScroll('#contacts')">Обратная связь</a></span>
+		</div>
+	</header>
+	<main>
+		<div id="top">
+			<h1>Известные учёные</h1>
+		</div>
+
+		<div id="main">
+			<div class="intro">
+				<h2>Михаил Васильевич Ломоносов</h2>
+				<span>Выдающийся русский ученый, первый русский академик, поэт, реформатор русского языка, художник и историк</span>
+			</div>
+			<div class="text">
+				<span>&laquo;Наука есть ясное познание истины, просвещение разума, непорочное увеселение жизни, похвала юности, старости подпора, строительница градов, полков, крепость успеха в несчастии, в счастии - украшение, везде верный и безотлучный спутник.&raquo;</span>
+			</div>
+		</div>
+
+		<div id="overview">
+
+			<div class="img">
+				<a id="target1" href="Информатика.html"><img style="width: 440px; height: 340px;" src="https://avatars.mds.yandex.net/get-zen_doc/931568/pub_5ff9a891f906b168720041d1_5ff9aa53f906b1687203a639/scale_1200" alt=""></a>
+				<span id="victim1"><h1>Информатика (Computer science)</h1><p>Наука о методах и процессах сбора, хранения, обработки, передачи, анализа и оценки информации с применением компьютерных технологий, обеспечивающих возможность её использования для принятия решений</p></span>
+			</div>
+			<div class="img">
+				<a id="target2" href="Физика.html"><img style="width: 440px; height: 340px;" src="https://catherineasquithgallery.com/uploads/posts/2021-03/1614803731_11-p-fon-dlya-prezentatsii-fizika-13.jpg" alt=""></a>
+				<span id="victim2"><h1>Физика</h1><p>Область естествознания: наука о наиболее общих законах природы, о материи, её структуре, движении и правилах трансформации. Понятия физики и её законы лежат в основе всего естествознания.</p></span>
+			</div>
+			<div class="img">
+				<a id="target3" href="Астрономия.html"><img style="width: 440px; height: 340px;" src="https://phonoteka.org/uploads/posts/2021-04/1618516413_7-phonoteka_org-p-astronomiya-fon-7.jpg" alt=""></a>
+				<span id="victim3"><h1>Астрономия</h1><p>Наука о Вселенной, изучающая расположение, движение, структуру, происхождение и развитие небесных тел и систем. В частности, астрономия изучает Солнце и другие звёзды, планеты Солнечной системы и их спутники, астероиды, кометы, чёрные дыры, галактики и их скопления и многое другое.</p></span>
+			</div>
+			<div class="img">
+				<a id="target4" href="Химия.html"><img style="width: 440px; height: 340px;" src="https://phonoteka.org/uploads/posts/2021-04/1618921375_15-phonoteka_org-p-fon-dlya-proekta-po-khimii-15.jpg" alt=""></a>
+				<span id="victim4"><h1>Химия</h1><p>Наука о веществах и их превращениях. Она изучает состав и строение веществ, зависимость их свойств от строения, условия и способы превращения одних веществ в другие.</p></span>
+			</div>
+			<!--<div class="img">
+				<a id="target5" href="Экономика.html"><img style="width: 440px; height: 340px;" src="https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg" alt=""></a>
+				<span id="victim5"><h1>Экономика</h1><p>Совокупность наук о ведении хозяйства, вид социальной науки, изучающий взаимоотношение людей в процессе производства, потребления, распределения и обмена товаров или услуг.</p></span>
+			</div>
+			<div class="img">
+				<a id="target6" href="Философия.html"><img style="width: 440px; height: 340px;" src="https://de24.adygnet.ru/pluginfile.php/8770/course/overviewfiles/scale_1200.jpg" alt=""></a>
+				<span id="victim6"><h1>Философия</h1><p>Наука о всеобщих свойствах, связях, отношениях, присущих явлениям всех сфер действительности (неживой, живой природе, обществу, процессам мышления), синтезированное знание, в котором в обобщенной форме выражены достижения всей человеческой культуры..</p></span>
+			</div>-->
+		</div>
+	</main>
+
+	<footer id="contacts">
+		<center><h5>Обратная связь</h5></center>
+		<form id="form_input" action="#">
+			<label for="name">Имя</label><br>
+			<input placeholder="Введите имя" type="text" name="name" size="50" required><span></span><br>
+			<label for="email">Ваша почта</label><br>
+			<input type="email" placeholder="Введите email" name="email" size="50" required><span></span><br>
+			<label for="message">Сообщение</label><br>
+			<textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+		</form>
+	</footer>
+
+	
+
+	<script>
+		target1.onmouseover = function(){victim1.style.opacity='1'};
+		target1.onmouseout = function(){victim1.style.opacity=''};
+
+		target2.onmouseover = function(){victim2.style.opacity='1'};
+		target2.onmouseout = function(){victim2.style.opacity=''};
+
+		target3.onmouseover = function(){victim3.style.opacity='1'};
+		target3.onmouseout = function(){victim3.style.opacity=''};
+
+		target4.onmouseover = function(){victim4.style.opacity='1'};
+		target4.onmouseout = function(){victim4.style.opacity=''};
+
+/*		target5.onmouseover = function(){victim5.style.opacity='1'};
+		target5.onmouseout = function(){victim5.style.opacity=''};
+
+		target6.onmouseover = function(){victim6.style.opacity='1'};
+		target6.onmouseout = function(){victim6.style.opacity=''};*/
+	</script>
+
+</body>
+</html>
